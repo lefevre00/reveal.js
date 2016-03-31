@@ -28,6 +28,14 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style type="text/css">
+			.content {
+				background-color: white;
+				border-radius: 25px;
+				box-shadow: 10px 10px 5px grey;
+				opacity: 0.85;"
+			}
+		</style>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -40,18 +48,22 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<img src="https://wiki.jenkins-ci.org/download/attachments/2916393/logo-title.png?version=1&modificationDate=1302753947000" border="none">
-					<h2>Job Dsl @ AMDM</h2>
-					<p>
-						<small>Par <a href="http://hakim.se">Michaël Lefèvre</a></small>
-					</p>
+				<section data-background="view-xml.png">
+					<div class="content">
+						<img src="https://wiki.jenkins-ci.org/download/attachments/2916393/logo-title.png?version=1&modificationDate=1302753947000" border="none">
+						<h2>Job Dsl @ AMDM</h2>
+						<p>
+							<small>Par <a href="http://hakim.se">Michaël Lefèvre</a></small>
+						</p>
+					</div>
 				</section>
 
-				<section>
-				  <h2>Pourquoi ?</h2>
-				  <p class="fragment">Jenkins est très puissant pour travailler</p>
-				  <p class="fragment">Mais configurer un job, c'est long</p>
+				<section data-background="http://screenrant.com/wp-content/uploads/Game-of-Thrones-Jon-Snow-Dead.jpg">
+					<div class="content">
+					  <h2>Pourquoi ?</h2>
+					  <p class="fragment">Jenkins est très puissant pour travailler</p>
+					  <p class="fragment">Mais configurer un job, c'est long</p>
+				  	</div>
 				</section>
 				
 				<section>
@@ -109,11 +121,13 @@ branches.each {
 				  </ul>
 				</section>
 				
-				<section>
-					<h2>Pour allez plus loin</h2>
-					<p><a href="https://jenkinsci.github.io/job-dsl-plugin/">Api</a> Job Dsl</p>
-					<p><a href="http://job-dsl.herokuapp.com/">Playground</a></p>
-					<p><a href="http://demeter2.amdm.local/...">Projet</a> de test</p>
+				<section data-background="http://www.coolwallpapers.org/photo/39257/GameOfThrones_Locations_The_Wall_01.jpg">
+					<div class="content">
+						<h2>Pour allez plus loin</h2>
+						<p><a href="https://jenkinsci.github.io/job-dsl-plugin/">Api</a> Job Dsl</p>
+						<p><a href="http://job-dsl.herokuapp.com/">Playground</a></p>
+						<p><a href="http://demeter2.amdm.local/...">Projet</a> de test</p>
+					</div>
 				</section>
 				
 				<section>
